@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOTHS OF CHILDES</title>
+    <link rel="stylesheet" href="e-com.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="toggle-container">
+           <input type="checkbox" id="modeToggle">
+           <label for="modeToggle" class="toggle-label">
+              <span class="toggle-circle"></span>
+           </label>
+        </div>
+     </header>
+
+     <script>
+        const toggleCheckbox = document.getElementById("modeToggle");
+        const body = document.body;
+        const savedMode = localStorage.getItem("mode");
+        if (savedMode) {
+           body.classList.add(savedMode);
+           toggleCheckbox.checked = savedMode === "dark-mode";
+        }
+        toggleCheckbox.addEventListener("change", () => {
+           if (toggleCheckbox.checked) {
+              body.classList.replace("light-mode", "dark-mode");
+              localStorage.setItem("mode", "dark-mode");
+           } else {
+              body.classList.replace("dark-mode", "light-mode");
+              localStorage.setItem("mode", "light-mode");
+           }
+        });
+
+
+
+
+     </script>
+
+
+
+    <div id="childs">
+        <hr>
+        <h1>CHILDREN'S CLOTHES</h1>
+        <hr>
+
+        <section class="nanu">
+
+            <button><a href="e-com.html">All Products</a></button>
+            <button><a href="e-com-khusi.html">Children</a></button>
+            <button><a href="e-com-lailsi.html">Electronic Items</a></button>
+            <button><a href="e-com3.html">Jewllery</a></button>
+            <button><a href="e-com-suman.html">Footware</a></button>
+            <button><a href="e-com-jini.html">Utensils</a></button>
+
+        </section>
+
+        <section class= "products">
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/352227276/swwv3_400.webp">
+                <p>Pretty Stylish Girls Frocks</p>
+                <h3>From Rs. 213</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/333527276/3yuof_400.webp">
+                <p>Pretty Funky Girls Frocks</p>
+                <h3>From Rs. 297</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+ 
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/401835855/vhudd_400.webp">
+                <p>Pretty Comfy Girls Frocks</p>
+                <h3>From Rs. 133</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/341951757/jldzs_400.webp">
+                <p>Cute Elegant Girls Frocks</p>
+                <h3>From Rs. 210</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/218376625/dqfyb_400.webp">
+                <p>Flawsome Fancy Frocks</p>
+                <h3>From Rs. 219</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+    
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/248660411/hmlmp_400.webp" >
+                <p>Pretty Comfy Girls Frocks</p>
+                <h3>From Rs. 239</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/390923561/gqeqc_400.webp" >
+                <p>Princess Funky Girls Frocks</p>
+                <h3>From Rs. 145</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/389252960/qqtof_400.webp">
+                <p>Fancy Kurta Sets</p>
+                <h3>From Rs. 97</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/339516716/tk6v2_400.webp" >
+                <p>PN Fashion Kid's Frocks</p>
+                <h3>From Rs. 272</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/391824259/kplos_400.webp">
+                <p>Modern Trendy Frocks</p>
+                <h3>From Rs. 190</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+        
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/389166003/0mkxr_400.webp" >
+                <p>Tinkle Stylesh Girls Top</p>
+                <h3>From Rs. 210</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/366018684/dor8f_400.webp">
+                <p>Modern Elegant Girls Sweaters</p>
+                <h3>From Rs. 286</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/387941742/tnses_400.webp">
+                <p>Pretty Stylus Top</p>
+                <h3>From Rs. 219</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/371269383/cbwte_400.webp">
+                <p>Cutiepie Classy Top</p>
+                <h3>From Rs. 116</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/365178407/lwain_400.webp">
+                <p>Agile Trendy Girls Sweatshirts</p>
+                <h3>From Rs. 270</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+        
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/237864796/hejyx_400.webp">
+                <p>Modern Funky Girls Frocks</p>
+                <h3>From Rs. 202</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/393171285/tbkzf_400.webp">
+                <p>Cute Stylus Girls Frocks</p>
+                <h3>From Rs. 252</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/343112183/udkru_400.webp">
+                <p>Tinkle Stylus Girls Frocks</p>
+                <h3>From Rs. 152</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/396067673/dgycv_400.webp">
+                <p>Flawsome Fancy Girls Frocks</p>
+                <h3>From Rs. 129</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/371771751/hmrbd_400.webp">
+                <p>Flawsome Fancy Frocks</p>
+                <h3>From Rs. 181</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+        
+      
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/197551659/2hklr_400.webp">
+                <p>Cutiepie Comfy Kids Lehanga</p>
+                <h3>From Rs. 69</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/231529910/dywxb_400.webp">
+                <p>Fancy Girls Ethnic Gowns</p>
+                <h3>From Rs. 69</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/142171989/yt6am_400.webp">
+                <p>Flawsome Elegant Kids Lehanga</p>
+                <h3>From Rs. 110</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/247779193/tkgqj_400.webp">
+                <p>Cutiepie Fancy Kids Girls Dress</p>
+                <h3>From Rs. 111</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/91945804/2vwo2_400.webp">
+                <p>Cutiepie Elegant Kids Lehanga</p>
+                <h3>From Rs. 125</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+    
+      
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/294847263/s5xs8_400.webp" >
+                <p>Modern Funky Girls Top</p>
+                <h3>From Rs. 169</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/394441294/tadrd_400.webp">
+                <p>Trendy New Kurta Sets</p>
+                <h3>From Rs. 231</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/366246130/okpc0_400.webp">
+                <p>Agile Fancy Girls Frocks</p>
+                <h3>From Rs. 152</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/276136851/ifaqk_400.webp">
+                <p>Pretty Tretty Girls Frocks</p>
+                <h3>From Rs. 152</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/371269383/cbwte_400.webp">
+                <p>Cutiepie Classy Girls Top</p>
+                <h3>From Rs. 129</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+        
+      
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/97221969/nf34c_400.webp">
+                <p>Modern Classy Girls Frocks</p>
+                <h3>From Rs. 120</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/281414555/luhxv_400.webp">
+                <p>Princess Trendy Kids Girls Lehanga</p>
+                <h3>From Rs. 315</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/342096015/guiin_400.webp">
+                <p>Cute Stylish Kids Girls Lehanga</p>
+                <h3>From Rs. 363</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/386579046/2peld_400.webp">
+                <p>Flawsome Stylus Girls Frocks</p>
+                <h3>From Rs. 273</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://images.meesho.com/images/products/302378569/ahy7c_400.webp">
+                <p>Cute Stylish Kids Girls Lehanga</p>
+                <h3>From Rs. 363</h3>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+</div>
+
+    <hr>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>
+                    We are a Recovery lifestyle brand with the purpose of shining a light on addiction & to celebrate
+                    our
+                    Hope with the world!
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Shipping & Policy</a></li>
+                    <li><a href="#">Subscription Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024, Ashes To Rubies. Powered by Shopify</p>
+        </div>
+    </footer>

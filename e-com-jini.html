@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sopping website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="e-com.css">
+    <style>
+     
+     html, body {
+       
+       background-color: white; 
+       color: black; 
+       transition: 0.5s ease, color 0.5s ease;
+       margin-left: auto;
+       margin-right: auto;
+       
+   }
+   .carts {
+         text-align: center;
+         margin: 20px;
+         border: 1px solid #ccc;
+         padding: 15px;
+         border-radius: 10px;
+         width: 250px;
+         display: inline-block;
+      }
+
+      .like-button {
+         font-size: 24px;
+         color: gray; 
+         cursor: pointer;
+         transition: color 0.3s ease;
+      }
+
+      .liked {
+         color: red;
+      }
+
+      .buy h3 {
+         display: inline;
+         margin-right: 10px;
+      }
+
+
+   .dark-mode {
+       background-color: black; 
+       color: white; }
+
+ 
+   #toggleButton {
+      margin: 20px;
+       padding: 5px 20px;
+       font-size: 10px;
+       border-radius: 10px;
+       cursor: pointer;
+       border: 1px solid black;
+       background-color: lightgray;
+       color: black;
+       transition: background-color 0.3s ease, color 0.3s ease;
+   }
+
+
+   #toggleButton:hover {
+       background-color:blue (163, 52, 52);
+       color: white;
+   }
+</style>
+</head>
+<header>
+   <div class="toggle-container">
+      <input type="checkbox" id="modeToggle">
+      <label for="modeToggle" class="toggle-label">
+         <span class="toggle-circle"></span>
+      </label>
+   </div>
+</header>
+
+<script>
+   const toggleCheckbox = document.getElementById("modeToggle");
+   const body = document.body;
+   const savedMode = localStorage.getItem("mode");
+   if (savedMode) {
+      body.classList.add(savedMode);
+      toggleCheckbox.checked = savedMode === "dark-mode";
+   }
+   toggleCheckbox.addEventListener("change", () => {
+      if (toggleCheckbox.checked) {
+         body.classList.replace("light-mode", "dark-mode");
+         localStorage.setItem("mode", "dark-mode");
+      } else {
+         body.classList.replace("dark-mode", "light-mode");
+         localStorage.setItem("mode", "light-mode");
+      }
+   });
+
+
+
+
+</script>
+   <hr>
+   <h1>Household Items</h1>
+   <hr>
+
+   <section class="nanu">
+
+    <button><a href="e-com.html">All Products</a></button>
+    <button><a href="e-com-khusi.html">Children</a></button>
+    <button><a href="e-com-lailsi.html">Electronic Items</a></button>
+    <button><a href="e-com3.html">Jewllery</a></button>
+    <button><a href="e-com-suman.html">Footware</a></button>
+    <button><a href="e-com-jini.html">Utensils</a></button>
+     
+  </section>
+
+            <section class="products">  
+               <div class="carts">
+                  <img
+                     src="https://tinyurl.com/ymhkznmh">
+                  <h3>vase</h3>
+                  <p>Rs. 200</p>
+                  <div class="buy">
+                     <button>Buy Now</button>
+                     <i class="like-button" id="heart">🤍</i>
+                  </div>
+               </div>
+               <div class="carts">
+                  <img
+                     src="https://tinyurl.com/y5fbbhrm">
+                   <h2>fruit container</h2>
+                  <p>Rs. 1,000</p>
+                  <div class="buy">
+                     <button>Buy Now</button>
+                     <i class="like-button" id="heart">🤍</i>
+                  </div>
+               </div>
+               <div class="carts">
+                  <img
+                     src="https://tinyurl.com/3cwksfha">
+                  <h3>spatula</h3>
+                  <p>Rs. 100</p>
+                  <div class="buy">
+                     <button>Buy Now</button>
+                     <i class="like-button" id="heart">🤍</i>
+                  </div>
+               </div>
+               <div class="carts">
+                  <img
+                     src="https://tinyurl.com/bdf4zxcc">
+                  <h3>Utensil</h3>
+                  <p>Rs. 1,400</p>
+                  <div class="buy">
+                     <button>Buy Now</button>
+                     <i class="like-button" id="heart">🤍</i>
+                  </div>
+               </div>
+               <div class="carts">
+                  <img
+                     src="https://tinyurl.com/573wxfde">
+                  <h3>LovePik</h3>
+                  <p>Rs. 500</p>
+                  <div class="buy">
+                     <button>Buy Now</button>
+                     <i class="like-button" id="heart">🤍</i>
+                  </div>
+               </div>
+               <div class="carts">
+                  <img src="https://tinyurl.com/ysj65hjw">
+                  <h3>Porti</h3>
+                  <p>Rs. 900</p>
+                  <div class="buy">
+                     <button>Buy Now</button>
+                     <i class="like-button" id="heart">🤍</i>
+                  </div>
+               </div>
+               <div class="carts">
+                  <img src="https://tinyurl.com/4936mmbp">
+                  <h3>Pillow</h3>
+                  <p>Rs. 900</p>
+                  <div class="buy">
+                     <button>Buy Now</button>
+                     <i class="like-button" id="heart">🤍</i>
+                  </div>
+               </div>
+               
+               <div class="carts">
+                  <img src="https://tinyurl.com/smpsbh2j">
+                  <h3>Smarty MG Mixer Grinder</h3>
+                  <p>Rs. 1,350</p>
+                  <div class="buy">
+                     <button>Buy Now</button>
+                     <i class="like-button" id="heart">🤍</i>
+                  </div>
+               </div>
+               <div class="carts">
+                  <img src="https://tinyurl.com/5x9n6w2u">
+                  <h3>Dustpan</h3>
+                  <p>Rs. 250</p>
+                  <div class="buy">
+                     <button>Buy Now</button>
+                     <i class="like-button" id="heart">🤍</i>
+                  </div>
+               </div>
+
+               <div class="carts">
+                  <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRHLQ2Se3J_NXBaJy9KaakzosH41wZb1BhVGk8ux_rU76kh-9zToLBv5p9elMjnw95W5aIxA8dcV7AZs9kBWxZgfgtrXg9N7YoDGkkqor-D1Mtahhqxswhh0Q" 
+                     alt="Folk-Spoons" width="200">
+                  <h3>Folk-Spoons</h3>
+                  <p>Rs. 350</p>
+                  <div class="buy">
+                     <button>Buy Now</button>
+                     <i class="like-button" id="heart">🤍</i>
+                  </div>
+               </div>
+            </section>
+         </main>
+      
+   <script>
+    
+      function updateLikes() {
+         const likes = JSON.parse(localStorage.getItem('likes')) || [];
+         document.querySelectorAll('.like-button').forEach(button => {
+            const itemId = button.getAttribute('data-id');
+            if (likes.includes(itemId)) {
+               button.classList.add('liked');
+            } else {
+               button.classList.remove('liked');}
+         });
+      }
+
+    
+      updateLikes();
+
+     
+      document.querySelectorAll('.like-button').forEach(button => {
+         button.addEventListener('click', function () {
+            const itemId = button.getAttribute('data-id');
+            let likes = JSON.parse(localStorage.getItem('likes')) || [];
+
+            if (likes.includes(itemId)) {
+               
+               likes = likes.filter(id => id !== itemId);
+            } else {
+               
+               likes.push(itemId);
+            }
+
+           
+            localStorage.setItem('likes', JSON.stringify(likes));
+            updateLikes();
+         });
+      });
+   </script>
+
+
+         <hr>
+
+<footer>
+      <div class="footer-container">
+         <div class="footer-section">
+            <h3>About Us</h3>
+            <p>
+               We are a Recovery lifestyle brand with the purpose of shining a light on addiction & to celebrate our
+               Hope with the world!
+            </p>
+         </div>
+         <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Shop</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+         </div>
+         <div class="footer-section">
+            <h3>Customer Service</h3>
+            <ul>
+               <li><a href="#">Shipping & Policy</a></li>
+               <li><a href="#">Subscription Policy</a></li>
+               <li><a href="#">Terms of Service</a></li>
+               <li><a href="#">Refund Policy</a></li>
+            </ul>
+         </div>
+         <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+               <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+               <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+               <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+               <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         <p>Copyright © 2024, Ashes To Rubies. Powered by Shopify</p>
+      </div>
+   </footer>
+
+</body>
+
+</html>

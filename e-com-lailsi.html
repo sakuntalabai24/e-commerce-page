@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="e-com.css">
+    <style>
+     
+     html, body {
+       
+       background-color: white; 
+       color: black; 
+       transition: 0.5s ease, color 0.5s ease;
+       margin-left: auto;
+       margin-right: auto;
+       
+   }
+   
+
+
+   .dark-mode {
+       background-color: black; 
+       color: white; }
+
+ 
+   #toggleButton {
+    margin: 20px;
+       padding: 5px 20px;
+       font-size: 10px;
+       border-radius: 10px;
+       cursor: pointer;
+       border: 1px solid black;
+       background-color: lightgray;
+       color: black;
+       transition: background-color 0.3s ease, color 0.3s ease;
+   }
+
+
+   #toggleButton:hover {
+       background-color:blue (163, 52, 52);
+       color: white;
+   }
+</style>
+</head>
+<body>
+    <header>
+        <div class="toggle-container">
+           <input type="checkbox" id="modeToggle">
+           <label for="modeToggle" class="toggle-label">
+              <span class="toggle-circle"></span>
+           </label>
+        </div>
+     </header>
+
+     <script>
+        const toggleCheckbox = document.getElementById("modeToggle");
+        const body = document.body;
+        const savedMode = localStorage.getItem("mode");
+        if (savedMode) {
+           body.classList.add(savedMode);
+           toggleCheckbox.checked = savedMode === "dark-mode";
+        }
+        toggleCheckbox.addEventListener("change", () => {
+           if (toggleCheckbox.checked) {
+              body.classList.replace("light-mode", "dark-mode");
+              localStorage.setItem("mode", "dark-mode");
+           } else {
+              body.classList.replace("dark-mode", "light-mode");
+              localStorage.setItem("mode", "light-mode");
+           }
+        });
+
+
+
+
+     </script>
+    <main>
+        <hr>
+        <h1>Electronic Items</h1>
+        <hr>
+
+
+        <section class="nanu">
+
+            <button><a href="e-com.html">All Products</a></button>
+            <button><a href="e-com-khusi.html">Children</a></button>
+            <button><a href="e-com-lailsi.html">Electronic Items</a></button>
+            <button><a href="e-com3.html">Jewllery</a></button>
+            <button><a href="e-com-suman.html">Footware</a></button>
+            <button><a href="e-com-jini.html">Utensils</a></button>
+             
+          </section>
+        <section class="products">
+
+
+            <div class="carts">
+                <img src="https://www.jiomart.com/images/product/original/492572874/philips-airfryer-xl-hd9270-70-with-rapid-air-technology-black-digital-o492572874-p590950579-0-202206140058.png?im=Resize=(360,360)"
+                    height="200px" width="400px">
+                <h2>Induxen</h2>
+                <p>From Rs. 1,800</p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://www.jiomart.com/images/product/original/492864863/mycrofine-desire-plus-ss-flour-mill-bubbles-digital-o492864863-p594105921-0-202209262110.jpeg?im=Resize=(360,360)"
+                    height="400px" width="350px">
+                <h2>Refrigrater</h2>
+                <p>From Rs. 18,000</p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/337686978/TA/CN/WK/14357089/mdr-ex150ap-sony-microphone-earbuds-500x500.jpg"
+                    height="400px" width="350px">
+                <h2>Ear Bords</h2>
+                <p>From Rs. 2,200</p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://www.jiomart.com/images/product/original/rv9l3awce0/madric-electric-dried-spice-and-coffee-grinder-grinder-and-chopper-crusher-for-home-detachable-cup-diswash-free-blade-cup-made-with-stianlees-steel-product-images-orv9l3awce0-p601526403-0-202305152157.jpg?im=Resize=(360,360)"
+                    height="370px" width="350px">
+                <h2>Coffee Grinder</h2>
+                <p>From Rs. 50,000 </p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://www.jiomart.com/images/product/original/491902936/usha-armor-ar1100wb-1100-watts-dry-iron-with-weilberger-black-non-stick-soleplate-purple-and-white-digital-o491902936-p590441860-0-202108122102.jpeg?im=Resize=(360,360)"
+                    height="400px" width="350px">
+                <h2>Iron</h2>
+                <p>From Rs. 1,80,00</p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+
+            <div class="carts">
+                <img src="https://www.jiomart.com/images/product/original/rvijcbuknn/hanging-red-shock-proof-2000w-immersion-water-heater-rod-with-isi-certified-with-1-year-warranty-product-images-orvijcbuknn-p604143170-0-202308282027.jpg?im=Resize=(360,360)"
+                    height="400px" width="350px">
+                <h2>Water Heater Rode</h2>
+                <p>From Rs. 32,900</p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://www.jiomart.com/images/product/original/492864908/lifelong-regalcool-llac10-12l-air-cooler-with-water-level-indicator-digital-o492864908-p591435889-0-202205182306.jpeg?im=Resize=(360,360)"
+                    height="400px" width="350px">
+                <h2>Air Conditioner</h2>
+                <p>From Rs. 10,100</p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+            <div class="carts">
+                <img src="https://www.jiomart.com/images/product/original/491166984/bajaj-new-shakti-25-litres-2000-watt-storage-water-heater-4-bee-star-rating-glassline-coated-tank-protection-against-rust-and-corrosion-white-digital-o491166984-p590040541-0-202410291736.jpeg?im=Resize=(360,360)" height="400px" width="350px">
+                <h2>Geyser</h2>
+                <p>Frome Rs. 7,000</p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+            <div class="carts">
+                <img src="https://cdn.t-nb.com/image/upload/c_pad,w_500,h_500/v1712157175/VISUEL_HD/CBLEDBK/03303170098370_C8L0_s01.jpg" height="400px" width="350px">
+                <h2>Head Phone</h2>
+                <p>Frome Rs. 6,000</p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+            <div class="carts">
+                <img src="https://www.jiomart.com/images/product/original/491186175/bajaj-majesty-dx-4-dry-iron-white-digital-o491186175-p491186175-0-202010061551.png?im=Resize=(360,360)" height="400px" width="350px">
+                <h2>Cameras</h2>
+                <p>From Rs. 9,000 </p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+            <div class="carts">
+                <img src="https://m.media-amazon.com/images/I/71rn9QAOYuL.jpg" height="400px" width="350px">
+                <h2>Video game</h2>
+                <p>From Rs. 12,000 </p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+            <div class="carts">
+                <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5442f636d07c43a089961050c7d2f83ed/Kemei-Hair-Trimmer-Electric-Hair-Clipper-Beauty-Kit-Multifunction-Shaver-Beard-Trimmer-Cordless-Cutting-Machine-LCD.jpg_640x640Q90.jpg_.webp" height="400px" width="350px">
+                <h2>Trimmer</h2>
+                <p>From Rs. 900 </p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+            <div class="carts">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2021/1/ZE/PO/ZC/25260645/product-jpeg.jpg" height="400px" width="350px">
+                <h2>Electronic watches</h2>
+                <p>From Rs. 2,000</p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+            <div class="carts">
+               <img src="https://www.jiomart.com/images/product/original/494227148/havells-hestio-13-fins-2900-watts-oil-filled-radiator-digital-o494227148-p605142472-0-202309291737.jpeg?im=Resize=(360,360)" height="400px" width="350px">
+               <h2>Filled Radiator</h2>
+               <p>From Rs. 600</p>
+               <div class="buy">
+                <button>Buy Now</button>
+                <i class="like-button" id="heart">🤍</i>
+             </div>
+            </div>
+            <div class="carts">
+              <img src="https://www.jiomart.com/images/product/original/rvebfqkgfh/bajaj-splendora-3l-3000watts-instant-water-heater-white-product-images-orvebfqkgfh-p610016649-0-202409240927.jpg?im=Resize=(360,360)" height="400px" width="350px">
+              <h2>Instant Water Heater</h2>
+              <p>From Rs. 700 </p>
+              <div class="buy">
+                <button>Buy Now</button>
+                <i class="like-button" id="heart">🤍</i>
+             </div>
+            </div>
+            <div class="carts">
+              <img src="https://www.jiomart.com/images/product/original/rv4hzt4ccp/pigeon-electric-kettle-hot-1-5-liter-electric-kettle-1-5-l-silver-black-product-images-orv4hzt4ccp-p609358927-0-202406151808.jpg?im=Resize=(360,360)" height="400px" width="350px">
+              <h2>Electric Kettle</h2>
+              <p>From Rs. 1,000 </p>
+              <div class="buy">
+                <button>Buy Now</button>
+                <i class="like-button" id="heart">🤍</i>
+             </div>
+            </div>
+            <div class="carts">
+              <img src="https://www.jiomart.com/images/product/original/494338963/voltas-beko-6-5-kg-eco-series-fully-automatic-top-loading-washing-machine-grey-wtl6504uea-digital-o494338963-p608547460-0-202404261958.jpeg?im=Resize=(360,360)" height="400px" width="350px">
+              <h2>Washing machine</h2>
+              <p>From Rs. 3,000</p>
+              <div class="buy">
+                <button>Buy Now</button>
+                <i class="like-button" id="heart">🤍</i>
+             </div>
+            </div>
+            <div class="carts">
+            <img src="https://www.jiomart.com/images/product/original/491473303/faber-80-litres-convection-microwave-oven-fbio-80l-6f-digital-o491473303-p590046642-0-202010110756.jpeg?im=Resize=(360,360)" height="400px" width="350px">
+            <h2>Microwave Owen</h2>
+            <p>From Rs. 5,000</p>
+            <div class="buy">
+                <button>Buy Now</button>
+                <i class="like-button" id="heart">🤍</i>
+             </div>
+            </div>
+            <div class="carts">
+                <img src="https://www.jiomart.com/images/product/original/rv4ata674b/longway-eggo-350-watt-egg-boiler-cooker-for-steaming-cooking-boiling-universal-7-eggs-product-images-orv4ata674b-p603820256-0-202308120156.jpg?im=Resize=(360,360)" alt="">
+                <h2>Boiler</h2>
+                <p>From Rs. 6,000</p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+            <div class="carts">
+                <img src="https://rukminim1.flixcart.com/image/600/600/xif0q/electric-cooker/h/m/q/-original-imagru6fj8jrbsgh.jpeg?q=70" alt="">
+                <h2>Electric Cooker</h2>
+                <p>From Rs. 3,200</p>
+                <div class="buy">
+                    <button>Buy Now</button>
+                    <i class="like-button" id="heart">🤍</i>
+                 </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <hr>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>
+                    We are a Recovery lifestyle brand with the purpose of shining a light on addiction & to celebrate
+                    our
+                    Hope with the world!
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Shipping & Policy</a></li>
+                    <li><a href="#">Subscription Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024, Ashes To Rubies. Powered by Shopify</p>
+        </div>
+    </footer>

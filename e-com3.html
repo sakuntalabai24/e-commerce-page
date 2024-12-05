@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="e-com.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+     
+    
+          html, body {
+       
+       background-color: white; 
+       color: black; 
+       transition: 0.5s ease, color 0.5s ease;
+       margin-left: auto;
+       margin-right: auto;
+       
+   }
+   
+
+
+   .dark-mode {
+       background-color: black; 
+       color: white; }
+
+ 
+   #toggleButton {
+      margin: 20px;
+       padding: 5px 20px;
+       font-size: 10px;
+       border-radius: 10px;
+       cursor: pointer;
+       border: 1px solid black;
+       background-color: lightgray;
+       color: black;
+       transition:  0.3s ease, color 0.3s ease;
+   }
+
+
+   #toggleButton:hover {
+       background-color:blue (163, 52, 52);
+       color: white;
+   }
+</style>
+</head>
+<body>
+   <header>
+      <div class="toggle-container">
+         <input type="checkbox" id="modeToggle">
+         <label for="modeToggle" class="toggle-label">
+            <span class="toggle-circle"></span>
+         </label>
+      </div>
+   </header>
+
+   <script>
+      const toggleCheckbox = document.getElementById("modeToggle");
+      const body = document.body;
+      const savedMode = localStorage.getItem("mode");
+      if (savedMode) {
+         body.classList.add(savedMode);
+         toggleCheckbox.checked = savedMode === "dark-mode";
+      }
+      toggleCheckbox.addEventListener("change", () => {
+         if (toggleCheckbox.checked) {
+            body.classList.replace("light-mode", "dark-mode");
+            localStorage.setItem("mode", "dark-mode");
+         } else {
+            body.classList.replace("dark-mode", "light-mode");
+            localStorage.setItem("mode", "light-mode");
+         }
+      });
+</script>
+    <hr>
+  <h1 justify-content="">Jewellery Fashion</h1>
+<hr>
+  
+
+   <section class="nanu">
+
+      <button><a href="e-com.html">All Products</a></button>
+      <button><a href="e-com-khusi.html">Children</a></button>
+      <button><a href="e-com-lailsi.html">Electronic Items</a></button>
+      <button><a href="e-com3.html">Jewllery</a></button>
+      <button><a href="e-com-suman.html">Footware</a></button>
+      <button><a href="e-com-jini.html">Utensils</a></button>
+       
+    </section>
+
+
+
+    <section class="products">
+
+        <div class="carts">
+           <img src="https://t3.ftcdn.net/jpg/02/34/21/58/240_F_234215884_pAF9PoUM5xEAsqW8g2oXsFUPRnkuOA14.jpg" height="150px"
+              width="200px">
+           <h2>Blassed Unisex Tee</h2>
+           <p>From Rs. 1,800</p>
+        </div>
+
+        <div class="carts">
+           <img src="https://t3.ftcdn.net/jpg/05/25/54/06/240_F_525540629_QxKds12GbTjsbqv3WeMQTstCvpvgy6MC.jpg"
+              height="150px" width="200px">
+           <h2>Blessed Sweat</h2>
+           <p>From Rs. 3,000</p>
+        </div>
+
+        <div class="carts">
+           <img
+              src="https://t3.ftcdn.net/jpg/06/00/94/30/240_F_600943040_ZNSw3baDu0x4WqLAIT5eHIVZP9UMzBib.jpg"
+              height="150" width="200px">
+           <h2>Blessed Ladies</h2>
+           <p>Rs. 2,200</p>
+        </div>
+
+        <div class="carts">
+           <img
+              src="https://t3.ftcdn.net/jpg/08/17/99/70/240_F_817997052_ACccJCUGJFbpQ5Ia7ULk1SZOwwPXgfHP.jpg"
+              height="150px" width="200px">
+           <h2>Blaessed Women's Flowy Tank</h2>
+           <p>Sold Out</p>
+        </div>
+
+        <div class="carts">
+           <img
+              src="https://t3.ftcdn.net/jpg/03/64/19/58/240_F_364195883_aUan0JLDp3iQog85vhBdbowb9YgbtwbK.jpg"
+              height="150px" width="200px">
+           <h2>Blessed Unisex Tank</h2>
+           <p>From Rs. 1,800</p>
+        </div>
+
+        <div class="carts">
+           <img
+              src="https://t3.ftcdn.net/jpg/01/36/54/40/240_F_136544003_5Xy2TwTrzCcJGeCVzoPSpWyrIJim065v.jpg"
+              height="150px" width="200px">
+           <h2>Blessed x Chamipion Sweatshirt</h2>
+           <p>From Rs. 5,150</p>
+        </div>
+
+        <div class="carts">
+           <img
+              src="https://t4.ftcdn.net/jpg/09/58/94/71/240_F_958947184_JW1nQ3p46qt5SEUh048AZ1stopI7T6pG.jpg"
+              height="150px" width="200px">
+           <h2>Blessed Ladies Tee</h2>
+           <p>From Rs. 1,900</p>
+        </div>
+
+        <div class="carts">
+           <img src="https://t4.ftcdn.net/jpg/09/26/77/81/240_F_926778196_7N9VAEpkpsWDGloPt2wE0GezyxegunGu.jpg"
+              height="150px" width="200px">
+           <h2>Blesse Hoodie</h2>
+           <p>From Rs. 3,100</p>
+        </div>
+
+        <div class="carts">
+           <img src="https://t4.ftcdn.net/jpg/09/33/07/79/240_F_933077954_pKw9TliC93cb0UEpl6haQ1yD99tVkOhQ.jpg"
+              height="150px" width="200px">
+           <h2>Blessed x Champion Hoodie</h2>
+           <p>sold out</p>
+        </div>
+
+        
+        <div class="carts">
+            <img src="https://t4.ftcdn.net/jpg/08/88/75/57/240_F_888755736_NzSZ0DtY68NMBYnpC99rjZ7EbAkQeH3f.jpg"
+               height="150px" width="200px">
+            <h2>Blessed x Champion Hoodie</h2>
+            <p>sold out</p>
+         </div>
+ 
+        
+         <div class="carts">
+            <img src="https://t4.ftcdn.net/jpg/06/47/28/51/240_F_647285132_SSJmvlClNUmYyZQCnKu6B2gqJxyWeHDF.jpg"
+               height="150px" width="200px">
+            <h2>Blessed x Champion Hoodie</h2>
+            <p>sold out</p>
+         </div>
+ 
+        
+         <div class="carts">
+            <img src="https://t4.ftcdn.net/jpg/08/13/39/89/240_F_813398976_T2ZiKgGaYXeI2Iwk6zpqFnAl1BRbO4Lz.jpg"
+               height="150px" width="200px">
+            <h2>Blessed x Champion Hoodie</h2>
+            <p>sold out</p>
+         </div>
+
+
+      
+            <div class="carts">
+               <img src="https://t4.ftcdn.net/jpg/08/13/39/89/240_F_813398976_T2ZiKgGaYXeI2Iwk6zpqFnAl1BRbO4Lz.jpg"
+                  height="150px" width="200px">
+               <h2>Blessed x Champion Hoodie</h2>
+               <p>sold out</p>
+            </div>
+            <div class="carts">
+               <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw9b832b64/homepage/Engagement%20Rings/solitaire-rings.jpg"
+               height="120px" width="200px">
+            <h2>Blessed x Champion Hoodie</h2>
+            <p>sold out</p>
+         </div>
+
+         <div class="carts">
+            <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwe348ed48/homepage/Engagement%20Rings/diamond-engagement-rings.jpg"
+               height="120px" width="200px">
+            <h2>Blessed x Champion Hoodie</h2>
+            <p>sold out</p>
+         </div>
+
+
+      
+         <div class="carts">
+                  <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/images/hi-res/2923DJD.jpg"
+                     height="120px" width="200px">
+                  <h2>Blessed x Champion Hoodie</h2>
+                  <p>sold out</p>
+         </div>
+               
+               
+
+           
+            <div class="carts">
+               <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/images/hi-res/51D2D2PGKAAA00_1.jpg"
+                  height="120px" width="200px">
+               <h2>Blessed x Champion Hoodie</h2>
+               <p>sold out</p>
+            </div>
+
+
+           
+            <div class="carts">
+               <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/images/hi-res/51M4C1FFEAA00_1.jpg"
+                  height="120px" width="200px">
+               <h2>Blessed x Champion Hoodie</h2>
+               <p>sold out</p>
+            </div>
+
+
+            <div class="carts">
+               <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw4c162935/homepage/shopByCategory/earrings-25-11-24.jpg"
+                  height="120px" width="200px">
+               <h2>Blessed x Champion Hoodie</h2>
+               <p>sold out</p>
+            </div>
+
+
+            <div class="carts">
+               <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw4661a33f/homepage/shopByCategory/bracelet-25-11-24.jpg"
+                  height="120px" width="200px">
+               <h2>Blessed x Champion Hoodie</h2>
+               <p>sold out</p>
+            </div>
+
+
+           
+     </section> 
+     <hr>
+
+
+  
+
+   <footer>
+    <div class="footer-container">
+       <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+             We are a Recovery lifestyle brand with the purpose of shining a light on addiction & to celebrate our
+             Hope with the world!
+          </p>
+       </div>
+       <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Shop</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Contact</a></li>
+          </ul>
+       </div>
+       <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+             <li><a href="#">Shipping & Policy</a></li>
+             <li><a href="#">Subscription Policy</a></li>
+             <li><a href="#">Terms of Service</a></li>
+             <li><a href="#">Refund Policy</a></li>
+          </ul>
+       </div>
+       <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+             <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+             <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+             <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+             <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+       </div>
+    </div>
+    <div class="footer-bottom">
+       <p>Copyright © 2024, Ashes To Rubies. Powered by Shopify</p>
+    </div>
+ </footer>
+
+
+</body>
+</html>

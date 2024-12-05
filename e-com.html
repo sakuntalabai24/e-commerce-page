@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Document</title>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="e-com.css">
+   <style>
+      body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         transition: background-color 0.5s, color 0.5s;
+      }
+
+      body.light-mode {
+         background-color: #ffffff;
+         color: #000000;
+      }
+
+      body.dark-mode {
+         background-color: #121212;
+         color: #ffffff;
+      }
+
+      header {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 20px;
+      }
+
+      h1 {
+         margin: 0;
+      }
+
+      main {
+         padding: 20px;
+      }
+
+      .toggle-container {
+         position: relative;
+         width: 60px;
+         height: 30px;
+      }
+
+      #modeToggle {
+         display: none;
+      }
+
+      .toggle-label {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         background-color: #ddd;
+         border-radius: 30px;
+         cursor: pointer;
+         transition: background-color 0.3s;
+      }
+
+      .toggle-circle {
+         position: absolute;
+         top: 3px;
+         left: 3px;
+         width: 24px;
+         height: 24px;
+         background-color: #ffffff;
+         border-radius: 50%;
+         transition: transform 0.3s ease-in-out;
+      }
+
+      #modeToggle:checked+.toggle-label {
+         background-color: #b1bdb1;
+      }
+
+      #modeToggle:checked+.toggle-label .toggle-circle {
+         transform: translateX(30px);
+      }
+
+
+      #heart {
+         display: block;
+         height: 50%;
+         width: 50%;
+         color: aqua;
+      }
+
+      .hide {
+         display: none;
+      }
+   </style>
+</head>
+
+<body>
+
+
+   <nav class="navbar">
+      <ul>
+         <li class="brand"><a href="e-com1.html">ASHES TO </a></li>
+         <li class="logo">
+            <img src="logo.png" alt="Ashes to Rubies Logo">
+
+         </li>
+         <li class="brand"><a href="e-com2.html">ORDER </a></li>
+   </nav>
+
+   <main>
+      <header>
+         <div class="toggle-container">
+            <input type="checkbox" id="modeToggle">
+            <label for="modeToggle" class="toggle-label">
+               <span class="toggle-circle"></span>
+            </label>
+         </div>
+      </header>
+
+     
+
+      <h1>Ashes to Rubies</h1>
+      <p>We are a Recovery lifestyle brand with the purpose of shining a light on addiction & to celebrate our Hope with
+         the world! Join us in making home famous.</p>
+      <p><a href="smoky.html">All proceeds go to solving addiction</a></p>
+
+      <section class="nanu">
+
+         <button><a href="e-com.html">All Products</a></button>
+         <button><a href="e-com-khusi.html">Children</a></button>
+         <button><a href="e-com-lailsi.html">Electronic Items</a></button>
+         <button><a href="e-com3.html">Jewellery</a></button>
+         <button><a href="e-com-suman.html">Footware</a></button>
+         <button><a href="e-com-jini.html">Utensils</a></button>
+
+      </section>
+      <section class="products">
+
+         <!-- <div class="carts">
+            <img src="https://images.picxy.com/cache/2020/3/10/6557fda294d22031f5af734fc5d5cc0c.jpg" height="150px"
+               width="200px">
+            <h2>Blassed Unisex Tee</h2>
+            <p>From Rs. 1,800</p>
+
+
+         </div>
+
+         <div class="carts">
+            <img
+               src="https://images.unsplash.com/photo-1591508215309-a6855abd429b?q=80&w=986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <h2>Blessed Sweatshirt</h2>
+            <p>From Rs. 3,000</p>
+            
+
+         </div>
+
+         <div class="carts">
+            <img
+               src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw9b832b64/homepage/Engagement%20Rings/solitaire-rings.jpg"
+               height="150px" width="200px">
+            <h2>Blessed Sweatshirt</h2>
+            <p>From Rs. 3,000</p>
+            
+
+         </div>
+
+         <div class="carts">
+            <img
+               src="https://img.freepik.com/free-photo/front-view-woman-posing-with-black-outfit_23-2151044534.jpg?t=st=1732171575~exp=1732175175~hmac=e316d95f9ccbf054247b558a81e8f7c55a409a315baf33beca4f32753f65dca4&w=740">
+            <h2>Blessed Ladies</h2>
+            <p>Rs. 2,200</p>
+           
+
+         </div>
+
+         <div class="carts">
+            <img
+               src="https://img.freepik.com/premium-photo/fashion-model-test-shoot-stylish-woman-posing-dark-studio-dressed-grey-underwear-jeans-shorts_172420-11311.jpg?w=740">
+            <h2>Blaessed Women's Flowy Tank</h2>
+            <p>Sold Out</p>
+           
+
+         </div>
+
+         <div class="carts">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkAl5Q6gzwwPpwWslHrhGA_1DpvhAyWoK8rA&s">
+            <h2>Blessed Unisex Tank</h2>
+            <p>From Rs. 1,800</p>
+           
+         </div>
+
+         <div class="carts">
+            <img src="https://t3.ftcdn.net/jpg/01/36/54/40/240_F_136544003_5Xy2TwTrzCcJGeCVzoPSpWyrIJim065v.jpg">
+            <h2>Blessed Ladies </h2>
+            <p>From Rs. 1,900</p>
+           
+         </div>
+
+         <div class="carts">
+            <img
+               src="https://thumbs.dreamstime.com/b/woman-black-dress-arms-crossed-studio-thinking-fashion-style-party-dark-background-girl-model-woman-black-320084088.jpg">
+            <h2>Blessed x Chamipion </h2>
+            <p>From Rs. 5,150</p>
+            
+         </div>
+
+         <div class="carts">
+            <img
+               src="https://img.freepik.com/premium-photo/young-latin-american-woman-posing-with-different-casual-clothes-black-background_68399-493.jpg?w=740">
+            <h2>Blessed Ladies </h2>
+            <p>From Rs. 1,900</p>
+            
+
+         </div>
+
+         <div class="carts">
+            <img src="https://t3.ftcdn.net/jpg/02/34/21/58/240_F_234215884_pAF9PoUM5xEAsqW8g2oXsFUPRnkuOA14.jpg">
+            <h2>Blesse Hoodie</h2>
+            <p>From Rs. 3,100</p>
+           
+
+         </div>
+
+         <div class="carts">
+            <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3_-ebQPObhtsIN-x09oHIxoBe5Yn7IGg2yMT60Euc7Dbhwvz9hEMaZP3MvFhhwqB-50g&usqp=CAU">
+            <h2>Blesse Hoodie</h2>
+            <p>From Rs. 3,100</p>
+            
+
+         </div>
+          
+         <div class="carts">
+            <img
+               src="https://c8.alamy.com/comp/D05WPT/shoes-on-wooden-seat-D05WPT.jpg">
+            <h2>Blesse Hoodie</h2>
+            <p>From Rs. 3,100</p>
+            
+
+         </div>
+         
+ 
+         <div class="carts">
+            <img
+               src="https://media.istockphoto.com/id/1306132571/photo/black-on-black-kitchen-utensils.jpg?s=612x612&w=is&k=20&c=aiGhFGQHE56cs1t-e1wkTS404dt1WCFnhN1rl5HyZXs=">
+            <h2>Blesse Hoodie</h2>
+            <p>From Rs. 3,100</p>
+            
+
+         </div>
+
+         <div class="carts">
+            <img
+               src="https://img.freepik.com/premium-photo/collection-electronic-devices-black-background-generative-ai_893571-1990.jpg">
+            <h2>Blesse Hoodie</h2>
+            <p>From Rs. 3,100</p>
+            
+
+         </div>
+
+         <div class="carts">
+            <img
+               src="https://img.freepik.com/premium-photo/attractive-brunette-model-with-creative-makeup-leather-jacket_172420-3566.jpg?w=740">
+            <h2>Blessed x Champion </h2>
+            <p>sold out</p>
+
+            
+         </div> -->
+
+      </section>
+   </main>
+
+   <hr>
+
+
+
+   <footer>
+      <div class="footer-container">
+         <div class="footer-section">
+            <h3>About Us</h3>
+            <p>
+               We are a Recovery lifestyle brand with the purpose of shining a light on addiction & to celebrate our
+               Hope with the world!
+            </p>
+         </div>
+         <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Shop</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+         </div>
+         <div class="footer-section">
+            <h3>Customer Service</h3>
+            <ul>
+               <li><a href="#">Shipping & Policy</a></li>
+               <li><a href="#">Subscription Policy</a></li>
+               <li><a href="#">Terms of Service</a></li>
+               <li><a href="#">Refund Policy</a></li>
+            </ul>
+         </div>
+         <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+               <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+               <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+               <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+               <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         <p>Copyright © 2024, Ashes To Rubies. Powered by Shopify</p>
+      </div>
+   </footer>
+
+
+
+
+
+
+   <script>
+
+      const products = [
+         {
+            title: "Blassed Unisex Tee",
+            price: "From Rs. 1,800",
+            imageUrl: "https://images.picxy.com/cache/2020/3/10/6557fda294d22031f5af734fc5d5cc0c.jpg"
+         },
+         {
+            title: "Blessed Sweatshirt",
+            price: "From Rs. 3,000",
+            imageUrl: "https://images.unsplash.com/photo-1591508215309-a6855abd429b?q=80&w=986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+         },
+         {
+            title: "Blessed Sweatshirt",
+            price: "From Rs. 3,000",
+            imageUrl: "https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw9b832b64/homepage/Engagement%20Rings/solitaire-rings.jpg"
+         },
+         {
+            title: "Blessed Ladies",
+            price: "Rs. 2,200",
+            imageUrl: "https://img.freepik.com/free-photo/front-view-woman-posing-with-black-outfit_23-2151044534.jpg?t=st=1732171575~exp=1732175175~hmac=e316d95f9ccbf054247b558a81e8f7c55a409a315baf33beca4f32753f65dca4&w=740"
+         },
+         {
+            title: "Blaessed Women's Flowy Tank",
+            price: "Sold Out",
+            imageUrl: "https://img.freepik.com/premium-photo/fashion-model-test-shoot-stylish-woman-posing-dark-studio-dressed-grey-underwear-jeans-shorts_172420-11311.jpg?w=740"
+         },
+         {
+            title: "Blessed Unisex Tank",
+            price: "From Rs. 1,800",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkAl5Q6gzwwPpwWslHrhGA_1DpvhAyWoK8rA&s"
+         },
+         {
+            title: "Blessed Ladies",
+            price: "From Rs. 1,900",
+            imageUrl: "https://t3.ftcdn.net/jpg/01/36/54/40/240_F_136544003_5Xy2TwTrzCcJGeCVzoPSpWyrIJim065v.jpg"
+         },
+         {
+            title: "Blessed x Chamipion",
+            price: "From Rs. 5,150",
+            imageUrl: "https://thumbs.dreamstime.com/b/woman-black-dress-arms-crossed-studio-thinking-fashion-style-party-dark-background-girl-model-woman-black-320084088.jpg"
+         },
+         {
+            title: "Blessed Ladies",
+            price: "From Rs. 1,900",
+            imageUrl: "https://img.freepik.com/premium-photo/young-latin-american-woman-posing-with-different-casual-clothes-black-background_68399-493.jpg?w=740"
+         },
+         {
+            title: "Blesse Hoodie",
+            price: "From Rs. 3,100",
+            imageUrl: "https://t3.ftcdn.net/jpg/02/34/21/58/240_F_234215884_pAF9PoUM5xEAsqW8g2oXsFUPRnkuOA14.jpg"
+         },
+         {
+            title: "Blesse Hoodie",
+            price: "From Rs. 3,100",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3_-ebQPObhtsIN-x09oHIxoBe5Yn7IGg2yMT60Euc7Dbhwvz9hEMaZP3MvFhhwqB-50g&usqp=CAU"
+         },
+         {
+            title:"Blesse Utensils",
+            price:"From Rs.3,495",
+            imageUrl:"https://media.istockphoto.com/id/1306132571/photo/black-on-black-kitchen-utensils.jpg?s=612x612&w=is&k=20&c=aiGhFGQHE56cs1t-e1wkTS404dt1WCFnhN1rl5HyZXs="
+         },
+
+         {
+            title:"Blessed Shoes",
+            price:"From Rs. 3,000",
+            imageUrl:"https://c8.alamy.com/comp/D05WPT/shoes-on-wooden-seat-D05WPT.jpg"
+         },
+         {
+            title: "Blessed Electronic",
+            price: "From Rs.3,531",
+            imageUrl:"https://img.freepik.com/premium-photo/collection-electronic-devices-black-background-generative-ai_893571-1990.jpg"
+         },
+         {
+            title: "Blessed x Champion",
+            price: "sold out",
+            imageUrl: "https://img.freepik.com/premium-photo/attractive-brunette-model-with-creative-makeup-leather-jacket_172420-3566.jpg?w=740"
+         }
+      ];
+      const section1 = document.getElementsByClassName('products')[0];
+      console.log(section1);
+
+      let carts = '';
+
+      products.map((ele, index) => {
+         carts += `<div key=${index} class="carts">
+      <img src=${ele.imageUrl} alt="Product Image">
+      <h2>${ele.title}</h2>
+      <p>${ele.price}</p>
+      <div id="dil">
+         <button>Buy Now</button>
+         <i class="heart-empty fa-regular fa-heart" style="cursor: pointer;"></i>
+         <i class="heart-filled fa-solid fa-heart hide" style="cursor: pointer;"></i>
+      </div>
+   </div>`; 
+      });
+      section1.innerHTML = carts;
+
+      
+      const hearts = document.querySelectorAll("#dil");
+
+      hearts.forEach((dil) => {
+         const heartEmpty = dil.querySelector(".heart-empty");
+         const heartFilled = dil.querySelector(".heart-filled");
+
+         heartEmpty.addEventListener("click", () => {
+            heartEmpty.classList.toggle("hide"); 
+            heartFilled.classList.toggle("hide"); 
+         });
+
+         heartFilled.addEventListener("click", () => {
+            heartEmpty.classList.toggle("hide"); 
+            heartFilled.classList.toggle("hide"); 
+         });
+      });
+
+
+ 
+         const toggleCheckbox = document.getElementById("modeToggle");
+         const body = document.body;
+         const savedMode = localStorage.getItem("mode");
+        
+         toggleCheckbox.addEventListener("change", () => {
+            if (toggleCheckbox.checked) {
+               body.classList.replace("light-mode", "dark-mode");
+               localStorage.setItem("mode", "dark-mode");
+            } else {
+               body.classList.replace("dark-mode", "light-mode");
+               localStorage.setItem("mode", "light-mode");
+            }
+         });
+
+
+   </script>
+
+</body>
+
+</html>
